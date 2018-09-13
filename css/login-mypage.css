@@ -1,0 +1,393 @@
+.line {
+    color: #c0c0c0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: rgb(124, 124, 124);
+    margin-bottom: 50px;
+}
+
+.line:before,
+.line:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #c0c0c0;
+    display: block;
+}
+
+.line:before {
+    margin-right: .4em;
+}
+
+.line:after {
+    margin-left: .4em;
+}
+
+.icon img {
+    width: 70px;
+    margin: 10vh 1vw 5vh 1vw;
+}
+
+.icon {
+    text-align: center;
+}
+
+.login-form {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 400px;
+}
+
+.mail,
+.password,
+.nickname {
+    margin-bottom: 20px;
+}
+
+.login-button {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+img.icon-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+img.icon-button:active {
+    position: relative;
+    top: 1px;
+}
+
+@media screen and (max-width: 400px) {
+    .icon img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .login-form {
+        margin: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .icon img {
+        width: 60px;
+        margin: 15vw 4vw;
+    }
+    .login-form {
+        margin: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        width: 90vw;
+    }
+    .login-button {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .line {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    transition: 0.1s;
+}
+
+#mypage {
+    background-color: #fbfbfb;
+    /*background-color: #f3f3f3;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #F9F9F9), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #F9F9F9), color-stop(.75, #F9F9F9), color-stop(.75, transparent), to(transparent));
+    -webkit-background-size: 7px 7px;
+    height: 1300px;*/
+}
+
+
+.header-img img {
+    width: 100vw;
+    height: 360px;
+}
+
+
+.user-icon img {
+    width: 170px;
+}
+
+.user-icon {
+    float: left;
+    margin-top: 20px;
+    margin-left: 4vw;
+}
+
+.user-name {
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 50px;
+    margin-left: 3vw;
+    font-size: 42px;
+}
+
+.user-id {
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 62px;
+    margin-left: 1vw;
+    font-size: 22px;
+}
+
+.backcolor {
+    background-color: rgba(76, 74, 138, 0.9);
+    border-radius: 0px;
+    width: 100vw;
+    height: 140px;
+    float: left;
+}
+
+
+.rank-icon img {
+    float: right;
+    margin-top: 30px;
+    margin-right: 13vw;
+    width: 80px;
+}
+
+.my-profile {
+    float: left;
+}
+
+.my-profile h3 {
+    margin-top: 60px;
+    margin-left: calc(3vw + 4px);
+    width: calc(170px + 2vw);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.profile-edit {
+    margin-left: calc(3vw + 4px);
+    color: black;
+}
+
+.profile-edit:hover {
+    opacity: 0.5;
+}
+
+.profile-edit-img {
+    display: inline;
+    margin-top: 100px;
+}
+
+.profile-edit-img a {
+    color: black;
+}
+
+.profile-edit-img img {
+    height: 20px;
+    margin-left: 43px;
+    margin-top: -6px;
+}
+
+
+
+.pr {
+    margin-top: 200px;
+    margin-left: calc(170px + 7vw + 1vw);
+    width: calc(50vw);
+}
+
+.possession {
+    height: 130px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(99, 96, 163);
+    position: relative;
+}
+
+.possession h3 {
+    color: white;
+    font-size: 26px;
+    margin: 7px 0px 0px 15px;
+    position: absolute;
+}
+
+.possession a:hover {
+    opacity: 0.5;
+}
+
+.recommend {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(99, 96, 163);
+}
+
+.recommend h3 {
+    color: white;
+    font-size: 26px;
+    margin: 7px 0px 0px 15px;
+    position: absolute;
+}
+
+.recommend a:hover {
+    opacity: 0.5;
+}
+
+.new-notice {
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(99, 96, 163);
+    height: calc(100% - 12px);
+}
+
+.new-notice h3 {
+    color: white;
+    font-size: 26px;
+    margin: 7px 0px 0px 15px;
+    position: absolute;
+}
+
+.new-notice a:hover {
+    opacity: 0.5;
+}
+
+.new-notice-title {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 2%;
+    line-height: 20px;
+}
+
+.new-notice-section {
+    color: black;
+}
+
+.new-notice-section a:hover {
+    opacity: 0.5;
+}
+
+.new-notice-title a {
+    color: #6462b6;
+    line-height: 20px;
+    margin-left: 2vw;
+}
+
+.titles {
+    margin-top: 5px;
+    padding-bottom: 4px;
+    width: 98%;
+    border-bottom: 1px solid rgb(99, 96, 163);
+}
+
+.titless {
+    margin-top: 5px;
+    padding-bottom: 4px;
+    width: 98%;
+}
+
+
+.balance-number {
+    float: left;
+    margin-top: -58px;
+    margin-left: 35%;
+}
+
+.balance-number h1 {
+    font-size: 50px;
+}
+
+.balance-number span {
+    color: #6462b6;
+    font-size: 30px;
+}
+
+.balance {
+    margin-top: 35px;
+    margin-left: calc(2% + 5%);
+}
+
+.balance h1 {
+    font-size: 20px;
+}
+
+.success-player {}
+
+
+
+.attention {
+    width: 100%;
+    height: 40px;
+    margin-top: -1px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(99, 96, 163);
+}
+
+
+
+
+
+
+
+
+
+.terms-of-service {
+    border-radius: 8px;
+    border: solid 1px #000000;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.terms-of-service-l {
+    border-radius: 8px;
+    border: solid 1px #000000;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50vw;
+    height: 40vh;
+    overflow: auto;
+    padding: 10px;
+}
+
+.submit-checkbox {
+    margin-top: 20px;
+    text-align: center;
+}
