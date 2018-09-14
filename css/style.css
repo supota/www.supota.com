@@ -19,6 +19,17 @@ body {
     line-height: 1.7;
     color: #828282;
     background: #fff;
+
+
+
+    user-select: none;
+    /* CSS3 */
+    -moz-user-select: none;
+    /* Firefox */
+    -webkit-user-select: none;
+    /* Safari、Chromeなど */
+    -ms-user-select: none;
+    /* IE10かららしい */
 }
 
 #page {
@@ -94,7 +105,7 @@ figure {
 
 ::selection {
     color: #fff;
-/*    background: #FC5185;*/
+    /*    background: #FC5185;*/
 }
 
 .fh5co-nav {
@@ -656,7 +667,7 @@ figure {
 }
 
 .fh5co-bg-section {
-/*    background: rgba(0, 0, 0, 0.05);*/
+    /*    background: rgba(0, 0, 0, 0.05);*/
 }
 
 #fh5co-services,
@@ -721,7 +732,7 @@ figure {
 
 .feature-center .icon i {
     font-size: 60px;
-/*    color: #FC5185;*/
+    /*    color: #FC5185;*/
     color: rgba(110, 197, 255, 0.9);
 }
 
@@ -740,7 +751,7 @@ figure {
 
 .feature-center h3 {
     font-size: 22px;
-/*    color: #FC5185 !important;*/
+    /*    color: #FC5185 !important;*/
     color: rgba(110, 197, 255, 0.9) !important;
 }
 
@@ -1105,7 +1116,7 @@ figure {
 }
 
 #fh5co-footer {
-/*    background: #efefef;*/
+    /*    background: #efefef;*/
 }
 
 #fh5co-footer .fh5co-footer-links {
