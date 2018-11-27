@@ -1,3 +1,9 @@
+html,
+body {
+    font-family: YuGothic, /* Mac用 */
+    'Yu Gothic', /* Windows用 */
+}
+
 @font-face {
     font-family: 'icomoon';
     src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -13,15 +19,11 @@
 * ======================================================= */
 
 body {
-    font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #828282;
     background: #fff;
-
-
-
     user-select: none;
     /* CSS3 */
     -moz-user-select: none;
@@ -88,7 +90,6 @@ h5,
 h6,
 figure {
     color: #000;
-    font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
 }
@@ -163,7 +164,6 @@ figure {
     text-transform: uppercase;
     font-weight: bold;
     font-weight: 700;
-    font-family: "Work Sans", Arial, sans-serif;
 }
 
 .fh5co-nav #fh5co-logo a span {
@@ -1421,7 +1421,6 @@ figure {
 .btn {
     margin-right: 4px;
     margin-bottom: 4px;
-    font-family: "Work Sans", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     -webkit-border-radius: 30px;
