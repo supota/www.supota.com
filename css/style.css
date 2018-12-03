@@ -1660,3 +1660,8 @@ figure {
 .js .animate-box {
     opacity: 0;
 }
+
+.main-image {
+    background-image: url(../images/logo.png);
+    background-position: center;
+}
