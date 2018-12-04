@@ -4,7 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.supota.com/images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>マイページ｜SUPOTA</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <meta name="description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="keywords" content="スポーツビジネス,トークンエコノミー,スポーツ,仮想通貨,SUPOTA,河合佑真,VOLANTHERS" />
+    <meta name="author" content="@KawaiYuma8" />
+    <meta property="og:title" content="SUPOTA" />
+    <meta property="og:image" content="https://www.supota.com/images/logo.png" />
+    <meta property="og:url" content="https://www.supota.com/" />
+    <meta property="og:site_name" content="SUPOTA" />
+    <meta property="og:description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="twitter:title" content="SUPOTA" />
+    <meta name="twitter:image" content="https://www.supota.com/images/logo.png" />
+    <meta name="twitter:url" content="https://www.supota.com/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125713558-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-125713558-1");
+    </script>
+    <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>
+        (function(i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+
+        ga("create", "UA-125713558-1", "auto");
+
+        InstantClick.on("change", function() {
+            ga("send", "pageview", location.pathname + location.search);
+        });
+
+        InstantClick.init(50);
+    </script>
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -17,83 +67,88 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
+
 <body id="info">
-<header>
-    <a class="modal float_r m-r5" href="#modal"><i class="far fa-question-circle fa-3x"></i></a>
-    <div id="logo">
-        <a class="" href="#"><img src="static/img/SUPOTA-black.png"></a>
+    <header>
+        <a class="modal float_r m-r5" href="#modal"><i class="far fa-question-circle fa-3x"></i></a>
+        <div id="logo">
+            <a class="" href="/"><img src="static/img/SUPOTA-black.png"></a>
+        </div>
+    </header>
+    <div id="modal" style="display: none;">
+        <p>自分の情報を確認・編集する事ができます</p>
     </div>
-</header>
-<div id="modal" style="display: none;">
-    <p>自分の情報を確認・編集する事ができます</p>
-</div>
-<div class="sub_ttl_area w_one">
-    <div class="wrap_sub_ttl">
-        <p class="sub_ttl">マイページ</p>
+    <div class="sub_ttl_area w_one">
+        <div class="wrap_sub_ttl">
+            <p class="sub_ttl">マイページ</p>
+        </div>
     </div>
-</div>
 
-<div class="inner">
-    <div class="profile-container">
-        <img class="profile-icon display-inline-block" src="./static/img/sports-list/soccer.jpg" alt="">
-        <!--<div class="img-upload textCenter"><p class="upfont">画像変更</p></div>
+    <div class="inner">
+        <div class="profile-container">
+            <img class="profile-icon display-inline-block" src="./static/img/sports-list/soccer.jpg" alt="">
+            <!--<div class="img-upload textCenter"><p class="upfont">画像変更</p></div>
         <input class="img-upload-file" type="file" name="upfile" id="upfile" accept="image/*" capture="user"/>-->
-        <div class="profile-name display-inline-block font5">鈴木二郎<span class="font4">@suzuki_jiro</span></div>
-    </div>
-    <div class="clear_both"></div>
-    <div class="profile-sentence">
-        自己紹介です自己紹介です自己紹介です自己紹介す己紹介す自己紹介す自己紹介す自己紹介す自己紹介ここは字数制限があってそれ以上は表示されない<span>.......</span>
-        <a href="#" class="edit float_r"><i class="fas fa-edit"></i>編集する</a>
+            <div class="profile-name display-inline-block font5">鈴木二郎<span class="font4">@suzuki_jiro</span></div>
+        </div>
         <div class="clear_both"></div>
+        <div class="profile-sentence">
+            自己紹介です自己紹介です自己紹介です自己紹介す己紹介す自己紹介す自己紹介す自己紹介す自己紹介ここは字数制限があってそれ以上は表示されない<span>.......</span>
+            <a href="#" class="edit float_r"><i class="fas fa-edit"></i>編集する</a>
+            <div class="clear_both"></div>
+        </div>
+        <div class="ff">
+            <a href="follow-list.html" class="follow font3">フォロー：<span>23</span></a>
+            <a href="follower-list.html" class="follow font3">フォロワー：<span>45</span></a>
+        </div>
+        <div class="border-line m-t2 m-b05"></div>
+        <div class="textCenter font3 m-b1">お知らせ</div>
+        <div class="noitce">
+            <div class="notice-text font3"><img class="display-inline-block" src="./static/img/notice-icon.svg" alt="">UIを大幅に改善しました</div>
+            <div class="notice-text font3"><img class="display-inline-block" src="./static/img/notice-icon.svg" alt="">SUPOTAをリリースしました</div>
+        </div>
+        <div class="border-line m-t2 m-b05"></div>
+        <div>
+            <div class="textCenter font3 m-b1">ウォレット</div>
+            <div class="textCenter font5">100,000,000<span class="font3 alignVert">JPY</span></div>
+        </div>
+        <div class="border-line m-t05 m-b05"></div>
+        <a href="" class="question font3"><span>▶︎</span>よくある質問</a>
     </div>
-    <div class="ff">
-        <a href="follow-list.html" class="follow font3">フォロー：<span>23</span></a>
-        <a href="follower-list.html" class="follow font3">フォロワー：<span>45</span></a>
-    </div>
-    <div class="border-line m-t2 m-b05"></div>
-    <div class="textCenter font3 m-b1">お知らせ</div>
-    <div class="noitce">
-        <div class="notice-text font3"><img class="display-inline-block" src="./static/img/notice-icon.svg" alt="">UIを大幅に改善しました</div>
-        <div class="notice-text font3"><img class="display-inline-block" src="./static/img/notice-icon.svg" alt="">SUPOTAをリリースしました</div>
-    </div>
-    <div class="border-line m-t2 m-b05"></div>
-    <div>
-        <div class="textCenter font3 m-b1">ウォレット</div>
-        <div class="textCenter font5">100,000,000<span class="font3 alignVert">JPY</span></div>
-    </div>
-    <div class="border-line m-t05 m-b05"></div>
-    <a href="" class="question font3"><span>▶︎</span>よくある質問</a>
-</div>
 
-<footer>
-    <!--        <p class="m-t2"><a href="/kiyaku">利用規約</a>　｜　<a href="/privacy">プライバシーポリシー</a>　｜　<a href="/thanks">SPECIAL THANKS</a></p>-->
-    <ul>
-        <li><a>利用規約</a></li>
+    <footer>
+        <!--        <p class="m-t2"><a href="/kiyaku">利用規約</a>　｜　<a href="/privacy">プライバシーポリシー</a>　｜　<a href="/thanks">SPECIAL THANKS</a></p>-->
+        <ul>
+            <li><a>利用規約</a></li>
 
-        <li><a>プライバシーポリシー</a></li>
-    </ul>
-    <p class="m-t4 txt_copyright">© 2018 SUPOTA</p>
-</footer>
-<div class="footer-menu">
-    <a href="./timeline.html" class="menu"><i class="fas fa-home"></i></a>
-    <a href="./player-search.html" class="menu"><i class="fas fa-search"></i></i></a>
-    <a href="./supota-list.html" class="menu"><i class="fab fa-stripe-s"></i></i></a>
-    <a href="./mypage.html" class="menu"><i class="fas fa-user"></i></a>
-</div>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script type="text/javascript">
-    if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
-    } else {
-        document.write('<meta name="viewport" content="width=1200">');
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-<script>
-    $('.modal').modaal();
-</script>
-<script src="static/js/screen-transition.js"></script>
+            <li><a>プライバシーポリシー</a></li>
+        </ul>
+        <p class="m-t4 txt_copyright">© 2018 SUPOTA</p>
+    </footer>
+    <div class="footer-menu">
+        <a href="./timeline.html" class="menu"><i class="fas fa-home"></i></a>
+        <a href="./player-search.html" class="menu"><i class="fas fa-search"></i></i></a>
+        <a href="./supota-list.html" class="menu"><i class="fab fa-stripe-s"></i></i></a>
+        <a href="./mypage.html" class="menu"><i class="fas fa-user"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf("iPhone") > 0) || navigator.userAgent.indexOf("iPod") > 0 || navigator.userAgent.indexOf("Android") > 0) {
+            document.write("<meta name="
+                viewport " content="
+                width = device - width, initial - scale = 1 ">");
+        } else {
+            document.write("<meta name="
+                viewport " content="
+                width = 1200 ">");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+    <script>
+        $(".modal").modaal();
+    </script>
+    <script src="static/js/screen-transition.js"></script>
 </body>
 
 </html>

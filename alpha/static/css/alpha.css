@@ -1,6 +1,7 @@
 #shuppin_list\ index {
     background-color: #fafafa;
 }
+
 .sitemap h1 {
     margin: 0 auto 20px auto;
     padding: 20px;
@@ -8,9 +9,11 @@
     border-bottom: rgba(206, 206, 206, 0.49) 1px solid;
     width: 70%;
 }
+
 .sitemap ul {
     text-align: center;
 }
+
 .sitemap ul a {
     display: inline-block;
     text-align: center;
@@ -21,10 +24,12 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.11) 0 0 10px;
 }
+
 .sitemap ul a:hover {
     color: white;
     background-color: #554453;
 }
+
 /*----------------------------------------------------
     #follow follower
 ----------------------------------------------------*/
@@ -36,6 +41,7 @@
     border-bottom: 1px solid #DBDBDB;
     background-color: #ffffff;
 }
+
 .user-icon {
     float: left;
     z-index: 5;
@@ -44,13 +50,16 @@
     height: 56px;
     width: 56px;
 }
+
 .user-data {
     float: left;
 }
+
 .user-name {
     margin-top: 12px;
     font-size: 2.5rem;
 }
+
 .follow-text {
     float: right;
     cursor: pointer;
@@ -71,9 +80,11 @@
     display: block;
     text-decoration: none;
 }
+
 .follow-text span {
     position: relative;
 }
+
 .follow-text:before {
     content: "";
     position: absolute;
@@ -88,10 +99,13 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-.follow-text:hover:before, .follow-text:focus:before {
+
+.follow-text:hover:before,
+.follow-text:focus:before {
     width: 370px;
     height: 370px;
 }
+
 /*----------------------------------------------------
  #sports-list
 ----------------------------------------------------*/
@@ -106,6 +120,7 @@
     color: white;
     font-size: 1.5rem;
 }
+
 .sports-list-name {
     display: block;
     color: #3E3E3E;
@@ -125,6 +140,7 @@
 /*----------------------------------------------------
  .player-icon
 ----------------------------------------------------*/
+
 .player-icon {
     display: inline-block;
     width: 46%;
@@ -133,6 +149,7 @@
     border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
 }
+
 .player-icon-img {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -140,12 +157,14 @@
     width: 94%;
     margin: 3% 0 0 3%;
 }
+
 .sports-name {
     text-align: center;
     font-size: 2rem;
     color: #5F5F5F;
     padding: 3px 0 3px 0;
 }
+
 .player-name {
     text-align: center;
     font-size: 2.3rem;
@@ -158,13 +177,13 @@
 ranking
 ----------------------------------------------------*/
 
-
 .ranking-number {
     font-size: 2.3rem;
     float: left;
     padding-left: 20px;
     line-height: 80px;
 }
+
 .ranking-box {
     width: 100%;
     height: 80px;
@@ -173,6 +192,7 @@ ranking
     border-top: 1px solid #DBDBDB;
     background-color: #ffffff;
 }
+
 .ranking-icon {
     float: left;
     z-index: 5;
@@ -181,28 +201,35 @@ ranking
     height: 56px;
     width: 56px;
 }
+
 .ranking-names {
     float: left;
     padding-top: 10px;
 }
+
 .r-sports-name {
     padding: 0;
 }
+
 .ranking-name {
     font-size: 2.5rem;
 }
+
 .ranking-supota {
     float: right;
     line-height: 80px;
     font-size: 2rem;
     padding-right: 20px;
 }
+
 /*----------------------------------------------------
     #mypage
 ----------------------------------------------------*/
+
 .profile-container {
     margin: 30px 0 0 5%;
 }
+
 .profile-icon {
     width: 80px;
     height: 80px;
@@ -211,6 +238,7 @@ ranking
     border-radius: 50%;
     float: left;
 }
+
 .profile-name {
     font-size: 3rem;
     margin-left: 10px;
@@ -227,6 +255,7 @@ ranking
     width: 86%;
     margin: 10px 0 0 7%;
 }
+
 .border-line {
     border: 1px solid #EFEFEF;
     border-radius: 10px;
@@ -249,15 +278,18 @@ ranking
     margin-left: 10%;
     font-size: 17px;
 }
+
 .notice-text img {
     width: 17px;
     height: 15px;
     padding-right: 3px;
 }
+
 .question {
     margin-left: 7%;
     color: #000;
 }
+
 .question span {
     color: #6CE0BC;
 }
@@ -273,12 +305,14 @@ supota-list
     right: calc(5px + 5vw);
     text-align: center;
 }
+
 .p_supota {
     position: relative;
     top: 13px;
     font-size: 1.6rem;
     right: calc(5px + 5vw);
 }
+
 .p_supota span {
     font-size: 1.3rem;
 }
@@ -286,14 +320,17 @@ supota-list
 /*----------------------------------------------------
     #athlete-page
 ----------------------------------------------------*/
+
 .a-icon {
     margin-left: 10px;
     width: 60px;
     height: 60px;
 }
+
 .a-name {
     padding-top: -140px;
 }
+
 .media {
     padding: 0 0 20px 0;
     margin: 30px auto 0 auto;
@@ -323,7 +360,6 @@ supota-list
     #error
 ----------------------------------------------------*/
 
-
 .error {
     width: 100%;
     color: #5d5d5d;
@@ -349,10 +385,12 @@ footer-menu
     width: 25%;
     height: 60px;
 }
+
 .menu i {
     margin: 15px auto;
     font-size: 30px;
 }
+
 .menu:hover {
     color: white!important;
     background-color: #c8c8c8;
@@ -408,6 +446,7 @@ footer-menu
         padding-bottom: 5px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .ranking-number {
         font-size: 2rem;

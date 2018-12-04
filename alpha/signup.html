@@ -4,7 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.supota.com/images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>会員登録｜SUPOTA</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="keywords" content="スポーツビジネス,トークンエコノミー,スポーツ,仮想通貨,SUPOTA,河合佑真,VOLANTHERS" />
+    <meta name="author" content="@KawaiYuma8" />
+    <meta property="og:title" content="SUPOTA" />
+    <meta property="og:image" content="https://www.supota.com/images/logo.png" />
+    <meta property="og:url" content="https://www.supota.com/" />
+    <meta property="og:site_name" content="SUPOTA" />
+    <meta property="og:description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="twitter:title" content="SUPOTA" />
+    <meta name="twitter:image" content="https://www.supota.com/images/logo.png" />
+    <meta name="twitter:url" content="https://www.supota.com/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125713558-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-125713558-1");
+    </script>
+    <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>
+        (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+
+        ga("create", "UA-125713558-1", "auto");
+
+        InstantClick.on("change", function() {
+            ga("send", "pageview", location.pathname + location.search);
+        });
+
+        InstantClick.init(50);
+    </script>
     <link rel="shortcut icon" href="https://kintt-post.jp/img/favicon.ico">
     <meta name="description" content="knitt-post">
     <meta name="keywords" content="knitt-post">
@@ -39,10 +81,10 @@
 
     <!-- *** 追加javascript *** -->
     <script type="text/javascript">
-        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-            document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
+        if ((navigator.userAgent.indexOf("iPhone") > 0) || navigator.userAgent.indexOf("iPod") > 0 || navigator.userAgent.indexOf("Android") > 0) {
+            document.write("<meta name="viewport" content="width=device-width,initial-scale=1">");
         } else {
-            document.write('<meta name="viewport" content="width=1200">');
+            document.write("<meta name="viewport" content="width=1200">");
         }
 
     </script>
@@ -55,7 +97,7 @@
 <body id="home">
     <div class="bg_ribbon">
         <header>
-            <a href="/"><img src='static/img/SUPOTA-white.png' alt='SUPOTA'></a>
+            <a href="/"><img src="static/img/SUPOTA-white.png" alt="SUPOTA"></a>
         </header>
 
         <div class="main-inner">
@@ -72,7 +114,7 @@
                 <a href="signup_entried.html"><input type="submit" value="新規登録する" class="btn login"></a>
             </div>
             <p class="m-t5 c-nega">または、以下のIDでも登録できます。</p>
-            <div class='m-t15 clear_fix'>
+            <div class="m-t15 clear_fix">
                 <div class="float_l w_half">
                     <a href=".jp/oauth/twitter" class="btn twr">Twitter</a>
                 </div>
