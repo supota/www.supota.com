@@ -782,7 +782,7 @@ header .sp_hdr_button_icon:after {
 
 footer {
     margin-top: 50px;
-    color: #a0d8ef;
+    color: #91c4d9;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -809,7 +809,7 @@ footer ul {
 footer ul li a {
     font-family: "Trebuchet MS", sans-serif;
     text-decoration: none;
-    color: #fff;
+    color: #91c4d9;
 }
 
 

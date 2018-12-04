@@ -1,35 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SUPOTA</title>
-    <link rel="shortcut icon" href="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="image_src" content="">
-    <meta property="og:locale" content="ja_JP" />
-    <meta property="fb:app_id" content="" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+    <title></title>
+
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+    <!-- *** stylesheet *** -->
     <link rel="stylesheet" type="text/css" href="static/css/normalize.css" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/default.css" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/common.css" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/alpha.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+
+    <!-- *** stylesheet 追加 *** -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- *** javascript *** -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+    <!-- *** 追加javascript *** -->
     <script type="text/javascript">
         if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
             document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
@@ -37,47 +32,65 @@
             document.write('<meta name="viewport" content="width=1200">');
         }
     </script>
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
 
-<body id="home">
+<body id="shuppin_list index">
 
-    <div class="bg_ribbon">
-        <header>
-            <a href="index.html"><img src="static/img/SUPOTA-white.png" alt="SUPOTA"></a>
-        </header>
+<div class="sitemap">
+    <h1>サイトマップ</h1>
+    <ul>
+        <a href="./top.html"><li>トップ</li></a>
+    </ul>
+    <ul>
+        <a href="./signup.html"><li>会員登録</li></a>
+        <a href="./login.html"><li>ログイン</li></a>
+    </ul>
 
-        <div class="main-inner">
-            <h1>SPORTS WITH TOKEN ECONOMY</h1>
-            <p class="center m-t4 c-nega">全てのアスリートがもっと自由に活動できる環境を目指して</p>
+    <ul>
+        <a href="./athlete-page.html"><li>アスリートページ</li></a>
+        <a href="./mypage.html"><li>マイページ</li></a>
+    </ul>
 
+    <ul>
+        <a href="./follow-list.html"><li>フォロー</li></a>
+        <a href="./follower-list.html"><li>フォロワー</li></a>
+    </ul>
 
+    <ul>
+        <a href="./player-all.html"><li>選手一覧</li></a>
+        <a href="./player-ranking.html"><li>ランキング</li></a>
+    </ul>
+    <ul>
+        <a href="./player-search.html"><li>条件検索</li></a>
+        <a href="./player-result.html"><li>検索結果</li></a>
+    </ul>
+    <ul>
+        <a href="./player-sports.html"><li>スポーツリスト</li></a>
+        <a href="./timeline.html"><li>タイムライン</li></a>
+    </ul>
+    <ul>
+        <a href="./supota-list.html"><li>保有SUPOTA</li></a>
+        <a href="./transaction.html"><li>取引</li></a>
+    </ul>
+    <ul>
+        <a href="./terms.html"><li>利用規約</li></a>
+        <a href="./privacy.html"><li>プライバシーポリシー</li></a>
+    </ul>
 
-
-            <div class="m-t8">
-                <a href="login.html" class="btn login">ログイン</a>
-            </div>
-
-            <div class="m-t2">
-                <a href="signup.html" class="btn signup">新しくはじめる方</a>
-            </div>
-            <p class="center m-t8 c-nega font3">現在SUPOTAはα版です。<br>β版リリースを2019年初旬を予定しています。</p>
-
-
-        </div>
-
-        <footer>
-            <!--       <p class="m-t2"><a href="kiyaku.html">利用規約</a>　｜　<a href="privacy.html">プライバシーポリシー</a></p>-->
-
-            <ul>
-                <li><a>利用規約</a></li>
-
-                <li><a>プライバシーポリシー</a></li>
-            </ul>
-            <p class="m-t4 txt_copyright">© 2018 SUPOTA.</p>
-        </footer>
-    </div>
-    <script src="static/js/screen-transition.js"></script>
+</div>
+<footer>
+    <!--    <p class="m-t2"><a href="/kiyaku">利用規約</a>　｜　<a href="/privacy">プライバシーポリシー</a>　｜　<a href="/thanks">SPECIAL THANKS</a></p>-->
+    <ul>
+        <li><a>利用規約</a></li>
+        <li><a>プライバシーポリシー</a></li>
+    </ul>
+    <p class="m-t4 txt_copyright">© 2018 SUPOTA</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+<script>
+    $('.modal').modaal();
+</script>
+<script src="static/js/screen-transition.js"></script>
 </body>
-
 </html>
