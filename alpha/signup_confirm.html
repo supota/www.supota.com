@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="shortcut icon" href="https://kintt-post.jp/img/favicon.ico">
+    <meta name="description" content="knitt-post">
+    <meta name="keywords" content="knitt-post">
+    <meta property="og:title" content="knitt-post"/>
+    <meta property="og:description"
+          content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content=".jp"/>
+    <meta property="og:image" content="/img/ogp.png"/>
+    <meta property="image_src" content="/img/ogp.png">
+    <meta property="og:locale" content="ja_JP"/>
+    <meta property="fb:app_id" content=""/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description"
+          content="">
+    <meta name="twitter:image" content=".jp/img/ogp.png">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
+
+    <!-- *** stylesheet *** -->
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
+
+    <!-- *** stylesheet 追加 *** -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- *** javascript *** -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+    <!-- *** 追加javascript *** -->
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
+        } else {
+            document.write('<meta name="viewport" content="width=1200">');
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body id="home">
+<div class="bg_ribbon">
+    <header>
+        <a href="/"><img src='/static/img/SUPOTA-white.png' alt='SUPOTA'></a>
+    </header>
+
+    <div class="main-inner">
+        <h1>アスリートに支援をしよう</h1>
+        <label class="contact_label m-t2">ユーザー名</label>
+        <div class="m-b2">
+            <div class="confirm w_f">{{form["user-name"]}}</div>
+        </div>
+
+        <label class="contact_label">性別</label>
+        <div class="flex m-b2">
+            <div class="confirm w_f">{{{"0": "その他", "1": "女性", "2": "男性"}[form["sex"]]}}</div>
+        </div>
+
+        <label class="contact_label">生年月日</label>
+        <div class="m-b2 confirm w_f">
+            <nobr>{{form["birth-year"]}}年</nobr>
+            <nobr>{{form["birth-month"]}}月</nobr>
+            <nobr>{{form["birth-day"]}}日</nobr>
+        </div>
+
+        <label class="contact_label">都道府県</label>
+        <div class="m-b4">
+            <div class="confirm w_f">{{form["place"]}}</div>
+        </div>
+
+        <!--<label class="contact_label">電話番号<span class="hissu">*</span></label>
+        <div class="m-b1">
+            <input type="tel"  class="" name="user-name" value="" maxlength="255" placeholder="例）000-000-0000">
+        </div>-->
+        <div class="m-b1">
+            <form action="/signup/end" method="post">
+                <input type="hidden" name="user-name" value="{{form["user-name"]}}">
+                <input type="hidden" name="sex" value="{{form["sex"]}}">
+                <input type="hidden" name="birth-year" value="{{form["birth-year"]}}">
+                <input type="hidden" name="birth-month" value="{{form["birth-month"]}}">
+                <input type="hidden" name="birth-day" value="{{form["birth-day"]}}">
+                <input type="hidden" name="place" value="{{form["place"]}}">
+                <input value="戻る" class="btn login w_half float_l" onClick='history.back()'>
+                <input type="submit" value="登録する" class="btn login w_half float_r">
+            </form>
+        </div>
+        <div class="clear_fix"></div>
+    </div>
+    <footer>
+        <ul>
+            <li><a>利用規約</a></li>
+            <li><a>プライバシーポリシー</a></li>
+        </ul>
+        <p class="m-t4 txt_copyright">© 2018 SUPOTA</p>
+    </footer>
+</div>
+<script src="static/js/screen-transition.js"></script>
+</body>
+</html>

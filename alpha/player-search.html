@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+    <!-- *** stylesheet *** -->
+    <link rel="stylesheet" href="./static/css/tag-style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/alpha.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+
+    <!-- *** stylesheet 追加 *** -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- *** javascript *** -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+    <!-- *** 追加javascript *** -->
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
+        } else {
+            document.write('<meta name="viewport" content="width=1200">');
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.tab li').click(function() {
+
+                //.index()を使いクリックされたタブが何番目かを調べ、
+                //indexという変数に代入します。
+                var index = $('.tab li').index(this);
+
+                //コンテンツを一度すべて非表示にし、
+                $('.box_list').css('display', 'none');
+
+                //クリックされたタブと同じ順番のコンテンツを表示します。
+                $('.box_list').eq(index).css('display', 'block');
+
+                //一度タブについているクラスselectを消し、
+                $('.tab li').removeClass('select');
+
+                //クリックされたタブのみにクラスselectをつけます。
+                $(this).addClass('select')
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body id="shuppin_list">
+
+<header>
+    <a class="modal float_r m-r5" href="#modal"><i class="far fa-question-circle fa-3x"></i></a>
+    <div id="logo">
+        <a class="" href="#"><img src="static/img/SUPOTA-black.png"></a>
+    </div>
+</header>
+<div id="modal" style="display: none;">
+    <p>アスリート選手を絞り込んで検索できます</p>
+</div>
+
+    <div class="sub_ttl_area">
+        <div class="wrap_sub_ttl">
+            <p class="sub_ttl">検索</p>
+        </div>
+    </div>
+
+
+    <div class="inner">
+        <div class="tab flex">
+            <a href="player-all.html">選手一覧</a>
+            <a href="player-ranking.html">ランキング</a>
+            <a class="player-bottom" href="player-search.html">条件検索</a>
+            <a href="player-sports.html">スポーツ別</a>
+        </div>
+    </div>
+
+
+    <form method="post" action="" accept-charset="UTF-8" class="p-t1">
+
+        <div class="form_inner">
+
+            <label for="naiyou" class="contact_label m-b05 ml2">性別<span class="hissu"></span></label>
+            <div class="flex m-b1">
+                <div class="btn_tap">
+                    <input type="radio" name="sex" value="1" id="request" checked="">
+                    <label for="request" class="btn">男性</label>
+                </div>
+                <div class="btn_tap">
+                    <input type="radio" name="sex" value="0" id="no_request">
+                    <label for="no_request" class="btn">女性</label>
+                </div>
+                <div class="btn_tap">
+                    <input type="radio" name="sex" value="0" id="no_request">
+                    <label for="no_request" class="btn">全て</label>
+                </div>
+            </div>
+
+            <div class="">
+                <label for="naiyou" class="contact_label m-b05 ml2">スポーツ種目<span class="hissu"></span></label>
+                <div id="tag_frame">
+                    <div id="tags"></div>
+                    <input type="text" id="tag_input" placeholder="入力してください">
+                    <input type="hidden" name="skills" id="skills">
+                </div>
+                <div id="result"></div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+                <script>
+                    var data_tags = [
+                        "アーマードバトル",
+                        "アイスホッケー",
+                        "アグレッシブインラインスケート",
+                        "アクロバット",
+                        "アメリカンフットボール",
+                        "アンプティサッカー",
+                        "eスポーツ",
+                        "一輪車",
+                        "インラインアルペン",
+                        "ウインドサーフィン",
+                        "ARスポーツ",
+                        "エクストリームスポーツ",
+                        "オーストラリアンフットボール",
+                        "カヌースラローム",
+                        "空手",
+                        "キックボクシング",
+                        "競技ダンス",
+                        "クリケット",
+                        "車椅子バスケットボール",
+                        "車椅子マラソン",
+                        "コーフボール",
+                        "ゴルフ",
+                        "サッカー",
+                        "三段跳",
+                        "自転車競技",
+                        "柔道",
+                        "シュートボクシング",
+                        "十種競技",
+                        "ショートトラックスピードスケート",
+                        "シンクロナイズドスイミング",
+                        "水泳",
+                        "スカッシュ",
+                        "スケートボード",
+                        "ストリートスポーツ",
+                        "スノーボード",
+                        "スポーツフィッシング",
+                        "スラックライン",
+                        "セーリング",
+                        "セパタクロー",
+                        "総合格闘技",
+                        "ダーツ",
+                        "体操",
+                        "ダブルダッチ",
+                        "チアダンス",
+                        "ディスクゴルフ",
+                        "テコンドー",
+                        "デスマッチ",
+                        "テニス",
+                        "ドッジボール",
+                        "トライアスロン",
+                        "トレイルランニング",
+                        "バイクトライアル",
+                        "バスケットボール",
+                        "バドミントン",
+                        "パラスポーツ",
+                        "パルクール",
+                        "バレエ",
+                        "パワーリフティング",
+                        "ハンググライダー",
+                        "ハンドボール",
+                        "BMX",
+                        "ビーチサッカー",
+                        "ビーチテニス",
+                        "ビーチバレーボール",
+                        "ビーチフラッグス",
+                        "ピラティス",
+                        "ビリヤード",
+                        "フットゴルフ",
+                        "フットサル",
+                        "フットバッグ",
+                        "フリースタイルフットボール",
+                        "ブレイクダンス",
+                        "フレスコボール",
+                        "フロアボール",
+                        "プロレス",
+                        "ボウリング",
+                        "ボクシング",
+                        "ボブスレー",
+                        "モータースポーツ",
+                        "野球",
+                        "ラート",
+                        "ライフセービング",
+                        "ライフル射撃",
+                        "ラグビー",
+                        "ラクロス",
+                        "ラフティング",
+                        "ランニング",
+                        "レスリング"
+                    ];
+                </script>
+                <script src="./static/js/input_tag.js"></script>
+            </div>
+
+            <div class="player-age">
+                <label for="naiyou" class="contact_label m-b05">年齢<span class="hissu"></span></label>
+                <select class="" name="age">
+                    <option value="">選択してください</option>
+                    <option value="全て">全て</option>
+                    <option value="10代">10代</option>
+                    <option value="20代">20代</option>
+                    <option value="30代">30代</option>
+                    <option value="40代">40代</option>
+                    <option value="50代">50代</option>
+                    <option value="60代">60代以上</option>
+                </select>
+            </div>
+
+            <div class="sports-year">
+                <label for="naiyou" class="contact_label m-b05">スポーツ歴<span class="hissu"></span></label>
+                <select class="" name="year">
+                <option value="">選択してください</option>
+                <option value="全て">全て</option>
+                <option value="10年">10年</option>
+                <option value="20年">20年</option>
+                <option value="30年">30年</option>
+                <option value="40年">40年</option>
+                <option value="50年">50年</option>
+                <option value="60年">60年以上</option>
+            </select>
+            </div>
+
+            <div class="player-live">
+                <label for="naiyou" class="contact_label m-b05">出身地<span class="hissu"></span></label>
+                <select class="" name="place">
+                <option value="">選択してください</option>
+                <option value="全て">全て</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+            </select>
+            </div>
+
+            <div class="cv_btn m-t3">
+                <a href="./player-result.html"><input type="submit" value="検索" class="btn bg_yellow"></a>
+            </div>
+
+        </div>
+
+
+    </form>
+
+    <footer>
+        <!--    <p class="m-t2"><a href="/kiyaku">利用規約</a>　｜　<a href="/privacy">プライバシーポリシー</a>　｜　<a href="/thanks">SPECIAL THANKS</a></p>-->
+        <ul>
+            <li><a>利用規約</a></li>
+
+            <li><a>プライバシーポリシー</a></li>
+        </ul>
+        <p class="m-t4 txt_copyright">©2018 SUPOTA</p>
+    </footer>
+<div class="footer-menu">
+    <a href="./timeline.html" class="menu"><i class="fas fa-home"></i></a>
+    <a href="./player-search.html" class="menu"><i class="fas fa-search"></i></i></a>
+    <a href="./supota-list.html" class="menu"><i class="fab fa-stripe-s"></i></i></a>
+    <a href="./mypage.html" class="menu"><i class="fas fa-user"></i></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+<script>
+    $('.modal').modaal();
+</script>
+    <script src="static/js/screen-transition.js"></script>
+</body>
+</html>
