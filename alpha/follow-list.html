@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+    <!-- *** stylesheet *** -->
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/alpha.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+
+    <!-- *** stylesheet 追加 *** -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- *** javascript *** -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+    <!-- *** 追加javascript *** -->
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=1">');
+        } else {
+            document.write('<meta name="viewport" content="width=1200">');
+        }
+    </script>
+</head>
+
+<body id="shuppin_list">
+
+<header>
+    <a class="modal float_r m-r5" href="#modal"><i class="far fa-question-circle fa-3x"></i></a>
+    <div id="logo">
+        <a class="" href="#"><img src="static/img/SUPOTA-black.png"></a>
+    </div>
+</header>
+<div id="modal" style="display: none;">
+    <p>フォローしている人たちを確認できます</p>
+</div>
+<div class="sub_ttl_area w_one">
+    <div class="wrap_sub_ttl">
+        <p class="sub_ttl">フォロー</p>
+    </div>
+</div>
+<div class="inner">
+    <div class="user-box">
+        <a href=""><img class="user-icon" src="./static/img/item/player-1.png" alt=""></a>
+        <div class="user-data">
+            <p class="user-name">鈴木二郎</p>
+            <p>@suzuki_jiro</p>
+        </div>
+        <div class="follow-text"><span>フォロー</span></div>
+    </div>
+    <div class="user-box">
+        <a href=""><img class="user-icon" src="./static/img/item/player-1.png" alt=""></a>
+        <div class="user-data">
+            <p class="user-name">鈴木二郎</p>
+            <p>@suzuki_jiro</p>
+        </div>
+        <div class="follow-text"><span>フォロー</span></div>
+    </div>
+    <div class="user-box">
+        <a href=""><img class="user-icon" src="./static/img/item/player-1.png" alt=""></a>
+        <div class="user-data">
+            <p class="user-name">鈴木二郎</p>
+            <p>@suzuki_jiro</p>
+        </div>
+        <div class="follow-text"><span>フォロー</span></div>
+    </div>
+    <div class="user-box">
+        <a href=""><img class="user-icon" src="./static/img/item/player-1.png" alt=""></a>
+        <div class="user-data">
+            <p class="user-name">鈴木二郎</p>
+            <p>@suzuki_jiro</p>
+        </div>
+        <div class="follow-text"><span>フォロー</span></div>
+    </div>
+    <div class="user-box">
+        <a href=""><img class="user-icon" src="./static/img/item/player-1.png" alt=""></a>
+        <div class="user-data">
+            <p class="user-name">鈴木二郎</p>
+            <p>@suzuki_jiro</p>
+        </div>
+        <div class="follow-text"><span>フォロー</span></div>
+    </div>
+</div>
+<div class="clear_both"></div>
+
+<footer>
+    <!--    <p class="m-t2"><a href="/kiyaku">利用規約</a>　｜　<a href="/privacy">プライバシーポリシー</a>　｜　<a href="/thanks">SPECIAL THANKS</a></p>-->
+    <ul>
+        <li><a>利用規約</a></li>
+        <li><a>プライバシーポリシー</a></li>
+    </ul>
+    <p class="m-t4 txt_copyright">© 2018 SUPOTA</p>
+</footer>
+<div class="footer-menu">
+    <a href="./timeline.html" class="menu"><i class="fas fa-home"></i></a>
+    <a href="./player-search.html" class="menu"><i class="fas fa-search"></i></i></a>
+    <a href="./supota-list.html" class="menu"><i class="fab fa-stripe-s"></i></i></a>
+    <a href="./mypage.html" class="menu"><i class="fas fa-user"></i></a>
+</div>
+<div class="clear_both"></div>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+<script>
+    $('.modal').modaal();
+</script>
+<script src="static/js/screen-transition.js"></script>
+</body>
+</html>
