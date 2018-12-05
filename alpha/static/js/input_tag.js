@@ -42,7 +42,7 @@ $(function () {
                 // Inputs are always single-line, even if inside a contentEditable element
                 // IE also treats inputs as contentEditable
                 isInput ? false :
-                // All other element types are determined by whether or not they're contentEditable
+                // All other element types are determined by whether or not they"re contentEditable
                 this.element.prop("isContentEditable");
 
             this.valueMethod = this.element[isTextarea || isInput ? "val" : "text"];
@@ -184,7 +184,7 @@ $(function () {
                     // prevent moving focus out of the text field
                     event.preventDefault();
 
-                    // IE doesn't prevent moving focus even with event.preventDefault()
+                    // IE doesn"t prevent moving focus even with event.preventDefault()
                     // so we set a flag to know when we should ignore the blur event
                     this.cancelBlur = true;
                     this._delay(function () {
@@ -192,7 +192,7 @@ $(function () {
                     });
 
                     // clicking on the scrollbar causes focus to shift to the body
-                    // but we can't detect a mouseup or a click immediately afterward
+                    // but we can"t detect a mouseup or a click immediately afterward
                     // so we have to track the next mousedown and close the menu if
                     // the user clicks somewhere outside of the autocomplete
                     var menuElement = this.menu.element[0];
@@ -234,9 +234,9 @@ $(function () {
                             this._value(item.value);
                         }
                     } else {
-                        // Normally the input is populated with the item's value as the
+                        // Normally the input is populated with the item"s value as the
                         // menu is navigated, causing screen readers to notice a change and
-                        // announce the item. Since the focus event was canceled, this doesn't
+                        // announce the item. Since the focus event was canceled, this doesn"t
                         // happen, so we update the live region so that screen readers can
                         // still notice the change and announce it.
                         this.liveRegion.text(item.value);
@@ -428,7 +428,7 @@ $(function () {
                 this._suggest(content);
                 this._trigger("open");
             } else {
-                // use ._close() instead of .close() so we don't cancel future searches
+                // use ._close() instead of .close() so we don"t cancel future searches
                 this._close();
             }
         },
@@ -567,7 +567,7 @@ $(function () {
             if ($.inArray(ui.item.value, $inputTagData) == -1) {
                 $inputTagData.push(ui.item.value);
                 $("#tags").css("display", "block");
-                $("#tags").append("<div class='tag_list'>" + ui.item.value + "　<a href='javascript:' class='remove' title='" + ui.item.value + "'>×</a></div>");
+                $("#tags").append("<div class="tag_list">" + ui.item.value + "　<a href="javascript:" class="remove" title="" + ui.item.value + "">×</a></div>");
                 arrReloadData();
             }
         }

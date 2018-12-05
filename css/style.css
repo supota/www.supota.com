@@ -426,7 +426,7 @@ figure {
     height: 700px;
     display: table;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1094,6 +1094,7 @@ figure {
 
 #fh5co-started .btn {
     height: 54px;
+    width: 18em;
     border: none !important;
     /*    background: #FC5185;*/
     color: rgba(110, 197, 255, 0.9);

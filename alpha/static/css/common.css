@@ -36,7 +36,7 @@ select:focus {
 }
 
 
-textarea{
+textarea {
     outline: none;
     line-height: 15px;
 }
@@ -175,7 +175,9 @@ table tr th {
 }
 
 .bar-hidden {
-    border-right-style: hidden; border-bottom-style: hidden; border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
 }
 
 
@@ -221,15 +223,19 @@ table tr th {
 .h_player {
     padding: 0 0 0 5%;
 }
-.h_quantity{
+
+.h_quantity {
     padding: 0 0 0 20%;
 }
+
 .h_price {
     padding: 0 0 0 15%;
 }
+
 .h_trade {
     padding: 0 0 0 12%;
 }
+
 .history-border {
     border-bottom: 1px solid #5d5d5d;
 }
@@ -243,9 +249,11 @@ table tr th {
     z-index: 0;
     font-size: 16px;
 }
-#modal-open {
-}
+
+#modal-open {}
+
 /* モーダル コンテンツエリア */
+
 #modal-main {
     display: none;
     width: 400px;
@@ -254,19 +262,21 @@ table tr th {
     padding: 0;
     background-color: #fcfcfc;
     color: #666666;
-    position:fixed;
+    position: fixed;
     z-index: 30;
     border-radius: 10px;
 }
+
 /* モーダル 背景エリア */
+
 #modal-bg {
-    display:none;
-    width:100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.5);
-    position:fixed;
-    top:0;
-    left:0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 20;
 }
 
@@ -279,9 +289,9 @@ table tr th {
     height: 40px;
     border: 1px solid #8db696;
     border-radius: 4px;
-    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
 }
 
 .quantity p {
@@ -470,7 +480,7 @@ header .sp_hdr_button_icon:after {
 #nav-open {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     cursor: pointer;
     z-index: 10;
     font-size: 30px;
@@ -557,7 +567,7 @@ header .sp_hdr_button_icon:after {
 }
 
 #nav-content a li:after {
-    content: '';
+    content: "";
     width: 8px;
     height: 8px;
     border-radius: 0 1px 0 1px;
@@ -632,7 +642,7 @@ header .sp_hdr_button_icon:after {
 }
 
 .nav_buck {
-    content: '';
+    content: "";
     width: 12px;
     height: 12px;
     border-radius: 0 1px 0 1px;
@@ -691,7 +701,6 @@ header .sp_hdr_button_icon:after {
  .inner set
  .box_inner{
 ----------------------------------------------------*/
-
 
 .main-inner,
 .form_inner,
@@ -1428,15 +1437,16 @@ select {
     background: #FFFFFF;
     border: double 5px #ed646a;
 }
+
 .alert-box p {
     margin: 0;
     padding: 0;
     color: #085461;
 }
+
 /*===============================================
 画面の横幅が320pxまで（スマホ用）
 ===============================================*/
-
 
 /*======================================
 
@@ -1454,4 +1464,3 @@ select {
 =======================================*/
 
 * html {}
-
