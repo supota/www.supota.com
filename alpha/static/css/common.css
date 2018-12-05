@@ -356,9 +356,9 @@ header
 ----------------------------------------------------*/
 
 header {
-    padding: 10px;
+    padding: 10px 0;
     margin: 0;
-    width: 100%;
+    width: 100% !important;
     background: #fff;
     border-bottom: 1px solid #e0e0e0;
     position: relative;
@@ -773,6 +773,10 @@ header .sp_hdr_button_icon:after {
 #home footer,
 #home footer a {
     color: #fff;
+}
+
+footer {
+    margin-bottom: 70px;
 }
 
 /*----------------------------------------------------
@@ -1298,15 +1302,12 @@ select {
     #header
 ----------------------------------------------------*/
     header {
-        padding: 10px 20px;
+        padding: 10px 0;
         box-sizing: border-box;
     }
     header .nav-inner {
         width: 100%;
         margin: 0 auto;
-    }
-    .m-r5 {
-        margin-right: 0px!important;
     }
     /*----------------------------------------------------
   #home header
