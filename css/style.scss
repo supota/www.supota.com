@@ -99,7 +99,6 @@ body {
     &-text {
       z-index: 100;
       width: 46vw;
-      height: 50vh;
       padding: 0 3vw 3vw 3vw;
       .ttl {
         margin: 0 0 30px 0;
@@ -114,10 +113,18 @@ body {
       overflow: hidden;
       width: 50vw;
       min-width: 300px;
-      height: 50vh;
+      max-height: 50vh;
       img {
         width: 100vw;
         min-width: 500px;
+      }
+    }
+    .pressroom {
+      font-size: 1.5rem;
+      margin: auto;
+      width: 60vw;
+      li span {
+        margin-right: 20px;
       }
     }
   }
@@ -183,7 +190,6 @@ body {
         min-width: initial;
         width: 40vw;
         img {
-          min-width: initial;
         }
       }
       &-text {
