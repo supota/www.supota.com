@@ -99,7 +99,6 @@ body {
     .sub-container-text {
       z-index: 100;
       width: 46vw;
-      height: 50vh;
       padding: 0 3vw 3vw 3vw; }
       .sub-container-text .ttl {
         margin: 0 0 30px 0;
@@ -111,10 +110,16 @@ body {
       overflow: hidden;
       width: 50vw;
       min-width: 300px;
-      height: 50vh; }
+      max-height: 50vh; }
       .sub-container-content img {
         width: 100vw;
         min-width: 500px; }
+    .sub-container .pressroom {
+      font-size: 1.5rem;
+      margin: auto;
+      width: 60vw; }
+      .sub-container .pressroom li span {
+        margin-right: 20px; }
 
 .footer {
   background-color: #12131d;
@@ -159,8 +164,6 @@ body {
     .sub-container-content {
       min-width: initial;
       width: 40vw; }
-      .sub-container-content img {
-        min-width: initial; }
     .sub-container-text {
       width: 60vw; }
       .sub-container-text .ttl {
