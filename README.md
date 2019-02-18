@@ -8,3 +8,6 @@ This is a website for supota.
 ## When you discover a bug?
 Please report to Issue of this repository.
 Or please fix and Pull Request.
+
+## Preview
+![](./preview/20190218-145616.png)
