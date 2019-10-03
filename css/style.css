@@ -152,5 +152,7 @@ header {
     .service-box.reverse {
       margin: 0; } }
 
-.contact-section > .btn {
-  margin: 20px auto 0 auto; }
+.contact-section {
+  background-color: #f8f8f8; }
+  .contact-section > .btn {
+    margin: 20px auto 0 auto; }
