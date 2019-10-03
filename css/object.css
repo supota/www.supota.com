@@ -89,6 +89,8 @@ h2 {
   -webkit-transform: rotateZ(0deg);
   -ms-transform: rotate(0deg);
   transform: rotateZ(0deg); }
+  .scroll-arrow:hover {
+    opacity: 0.6; }
 
 .scroll-arrow:before {
   content: "";
@@ -102,7 +104,10 @@ h2 {
   margin: auto;
   width: 20px;
   height: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
   border-style: solid;
   border-color: transparent white white transparent;
-  border-width: 2px;
+  border-width: 1px;
   background: transparent; }

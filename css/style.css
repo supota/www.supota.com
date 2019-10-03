@@ -8,8 +8,6 @@ a {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  a:hover {
-    color: rgba(255, 255, 255, 0.6); }
 
 ul {
   list-style: none; }
@@ -56,6 +54,8 @@ header {
   header > ul li a {
     font-size: 1rem;
     padding: 20px; }
+    header > ul li a:hover {
+      opacity: 0.6; }
   @media screen and (max-width: 896px) {
     header {
       width: 86%; }
