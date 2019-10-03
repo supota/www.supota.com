@@ -43,6 +43,7 @@
 
         InstantClick.init(50);
     </script>
+    <script src="js/smooth-scroll.js"></script>
     <!--script src="js/common.js"></script-->
     <!--<link href="//db.onlinewebfonts.com/c/8bc773512e829a52d207976b43c0ecca?family=Bodoni+SvtyTwo+ITC+TT" rel="stylesheet" type="text/css" />-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -51,25 +52,25 @@
 </head>
 
 <body>
-<header>
+<header data-scroll-header>
     <h1>SUPOTA</h1>
     <ul>
-        <li><a href="">Top</a></li>
-        <li><a href="">Vision</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Event</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a data-scroll href="#top">Top</a></li>
+        <li><a data-scroll href="#vision">Vision</a></li>
+        <li><a data-scroll href="#service">Service</a></li>
+        <li><a data-scroll href="#event">Event</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
     </ul>
 </header>
 <main>
-    <section class="main-visual">
+    <section id="top" class="main-visual">
         <h1>全てのアスリートが<br>本気でスポーツに取り組める社会へ</h1>
     </section>
-    <section class="vision-section">
+    <section id="vision" class="vision-section">
         <h2>Vision</h2>
         <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
     </section>
-    <section class="service-section">
+    <section id="service" class="service-section">
         <h2>Service</h2>
         <div class="service-box">
             <img class="left" src="img/main-visual.jpg" alt=""/>
@@ -79,13 +80,14 @@
             </div>
         </div>
         <div class="service-box reverse">
+            <img class="tb right" src="img/main-visual.jpg" alt=""/>
             <div class="left txt-box">
                 <h2>V Doc.</h2>
                 <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
             </div>
-            <img class="right" src="img/main-visual.jpg" alt=""/>
+            <img class="pc right" src="img/main-visual.jpg" alt=""/>
         </div>
-        <div class="service-box">
+        <div id="event" class="service-box">
             <img class="left" src="img/main-visual.jpg" alt=""/>
             <div class="right txt-box">
                 <h2>Event</h2>
@@ -93,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
         <h2>Contact</h2>
         <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
         <div class="btn"><div class="btn-back"></div><a href="">Contact us</a></div>
@@ -146,6 +148,9 @@
     function close_hamburger() {
         document.getElementById("hamburger-check").checked = false;
     }
+    var scroll = new SmoothScroll('a[href*="#"]',{
+        header: '[data-scroll-header]'
+    });
 </script>
 </body>
 

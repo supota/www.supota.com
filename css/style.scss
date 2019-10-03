@@ -23,24 +23,40 @@ body {
     overflow-x: hidden;
     background-color: #F8F8F8;
 }
+.pc {
+    display: block;
+    width: 100%;
+    @media screen and (max-width:896px) {
+        display: none!important;
+    }
+}
+.tb {
+    display: none!important;
+    width: 100%;
+    @media screen and (max-width:896px) {
+        display: block!important;
+    }
+}
 
 header {
+    z-index: 100;
     color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
-    padding: 20px 10%;
+    padding: 10px 7%;
     font-size: 0;
     > h1,>ul,> ul li {
         display: inline-block;
         vertical-align: middle;
     }
     >h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
         width: 150px;
     }
     >ul {
-        width: calc(80vw - 150px);
+        width: calc(86vw - 150px);
         font-size: 0;
         text-align: right;
     }
@@ -48,7 +64,11 @@ header {
         font-size: 1rem;
         padding: 20px;
     }
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:896px) {
+        width: 86%;
+        >h1 {
+            font-size: 1.5rem;
+        }
         >ul {
             display: none;
         }
@@ -75,6 +95,17 @@ header {
             font-size: 1.75rem;
         }
     }
+    @media screen and (max-width: 896px) {
+        >h1 {
+            padding: 35vh 5%;
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        >h1 {
+            font-size: 1.125rem;
+        }
+    }
 }
 
 .vision-section {
@@ -85,6 +116,11 @@ header {
 
 .service-section {
     padding-top: 50px;
+    @media screen and (max-width:896px) {
+        >h2 {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .service-box {
@@ -116,6 +152,27 @@ header {
         height: 260px;
         font-size: initial;
         text-align: left;
+        >h2 {
+            text-align: left;
+            &:after {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    @media screen and (max-width:896px) {
+        margin: 0;
+        >.right,>.left {
+            top: initial!important;
+            right: initial!important;
+            left: initial!important;
+            width: 100%;
+            height: initial;
+        }
+        >.txt-box {
+            padding: 20px 20px;
+            width: calc(100% - 40px);
+            height: initial;
+        }
     }
 }
 
@@ -123,6 +180,9 @@ header {
     margin: 40px 0 80px 0;
     >.right {
         top: -50px;
+    }
+    @media screen and (max-width:896px) {
+        margin: 0;
     }
 }
 
