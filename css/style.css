@@ -3,201 +3,104 @@
   margin: 0; }
 
 a {
-  color: black;
-  text-decoration: none; }
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
   a:hover {
-    color: black; }
+    color: rgba(255, 255, 255, 0.6); }
 
 ul {
   list-style: none; }
 
 body {
   position: relative;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Hiragino Mincho Pro", sans-serif;
   overflow-x: hidden;
-  color: white; }
+  background-color: #F8F8F8; }
 
-.flex-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-flow: row-reverse;
-  flex-flow: row-reverse; }
-
-.header-back {
-  z-index: 300;
-  position: -webkit-sticky;
-  position: sticky;
+header {
+  color: white;
+  position: fixed;
   top: 0;
-  height: 70px;
-  width: 100vw;
-  background-color: #12131d; }
-
-.main-container {
-  position: relative;
-  background-color: #12131d;
-  width: 100%;
-  height: calc(100vh - 70px); }
-  .main-container .logo {
-    position: absolute;
-    top: 0;
-    height: 211px;
-    width: 154px;
-    margin: calc(50vh - 150px) 0 0 calc(50vw - 77px); }
-  .main-container .copyright {
-    font-size: 0.75rem;
-    position: absolute;
-    top: 5rem;
-    right: -2rem;
+  left: 0;
+  padding: 20px 10%;
+  font-size: 0; }
+  header > h1, header > ul, header > ul li {
     display: inline-block;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  .main-container .sub-title {
-    position: absolute;
-    top: calc(50vh + 90px);
-    font-family: "BodoniSvtyTwoITCTT-Book", sans-serif;
-    font-size: 3rem;
-    width: 100%;
-    text-align: center; }
-  .main-container .scroll {
-    width: 50px;
-    position: absolute;
-    bottom: 0;
-    left: calc(50vw - 25px);
-    text-align: center; }
-    .main-container .scroll-text {
-      font-size: 0.875rem;
-      margin-bottom: 18px; }
-    .main-container .scroll-arrow {
-      margin: auto; }
+    vertical-align: middle; }
+  header > h1 {
+    font-size: 2.25rem;
+    width: 150px; }
+  header > ul {
+    width: calc(80vw - 150px);
+    font-size: 0;
+    text-align: right; }
+  header > ul li a {
+    font-size: 1rem;
+    padding: 20px; }
+  @media screen and (max-width: 1024px) {
+    header > ul {
+      display: none; } }
 
-.sub {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
+.main-visual {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/main-visual.jpg");
+  background-size: cover;
+  background-position: 55% 45%;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/ }
+  .main-visual > h1 {
+    padding: 35vh 10%;
+    font-size: 2.25rem;
+    font-weight: 100;
+    line-height: 1.75; }
+  @media screen and (max-width: 1024px) {
+    .main-visual > h1 {
+      font-size: 1.75rem; } }
+
+.vision-section, .contact-section {
   background-color: white;
-  color: #000; }
-  .sub .section-ttl {
-    margin: 50px auto 50px auto;
-    width: 200px;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 300;
-    font-family: "BodoniSvtyTwoITCTT-Book", sans-serif;
-    border-bottom: 1px solid black; }
-  .sub-container {
-    color: #000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
-    .sub-container-text {
-      z-index: 100;
-      width: 46vw;
-      padding: 0 3vw 3vw 3vw; }
-      .sub-container-text .ttl {
-        margin: 0 0 30px 0;
-        font-weight: 100;
-        font-size: 2rem; }
-      .sub-container-text .description {
-        margin: 0 0 30px 0; }
-    .sub-container-content {
-      overflow: hidden;
-      width: 50vw;
-      min-width: 300px;
-      max-height: 50vh; }
-      .sub-container-content img {
-        width: 100vw;
-        min-width: 320px; }
-    .sub-container .pressroom {
-      font-size: 1.5rem;
-      margin: auto auto 50px auto;
-      width: 60vw;
-      min-width: 320px; }
-      .sub-container .pressroom li {
-        border: none;
-        text-align: left;
-        padding-left: 20px;
-        width: 60vw;
-        min-width: 320px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-        .sub-container .pressroom li .btn-back {
-          width: 80vw;
-          left: -80vw;
-          background: rgba(0, 0, 0, 0.04); }
-        .sub-container .pressroom li:hover .btn-back {
-          top: -200px;
-          left: 0; }
-        .sub-container .pressroom li:hover a {
-          color: #000; }
-        .sub-container .pressroom li span {
-          margin-right: 20px; }
+  text-align: center;
+  padding: 50px 20px; }
 
-.footer {
-  background-color: #12131d;
+.service-section {
+  padding-top: 50px; }
+
+.service-box {
+  text-align: center;
   position: relative;
-  margin-top: 30px;
-  padding: 30px; }
-  .footer-ttl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .footer-ttl-supota {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .footer-ttl-supota img {
-        margin-right: 10px;
-        width: 33px;
-        height: 45px; }
-      .footer-ttl-supota h1 {
-        font-family: "Noto Sans", sans-serif;
-        margin-right: 30px;
-        font-size: 24px; }
-    .footer-ttl ul li {
-      margin: 0 20px 0 20px;
-      border-bottom: 0;
-      font-size: 14px; }
-      .footer-ttl ul li p {
-        border-bottom: 0 solid white; }
+  margin: 40px 0 180px 0;
+  width: 100%;
+  font-size: 0; }
+  .service-box > .right, .service-box > .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 300px; }
+  .service-box > .left {
+    position: relative;
+    left: 25px; }
+  .service-box > .right {
+    position: relative;
+    top: 50px;
+    right: 25px; }
+  .service-box > .txt-box {
+    z-index: 10;
+    background-color: white;
+    padding: 20px 50px;
+    width: 300px;
+    height: 260px;
+    font-size: initial;
+    text-align: left; }
 
-@media screen and (max-width: 600px) {
-  .main-container .logo {
-    width: 90px;
-    height: 124px;
-    margin: calc(50vh - 120px) 0 0 calc(50vw - 45px); }
-  .main-container .sub-title {
-    font-size: 1.5rem; }
-  .sub {
-    height: initial; }
-    .sub-container-content {
-      min-width: initial;
-      width: 40vw; }
-    .sub-container-text {
-      width: 60vw; }
-      .sub-container-text .ttl {
-        font-weight: 100;
-        font-size: 1.3rem; }
-  .footer {
-    padding: 30px; }
-    .footer-ttl {
-      display: initial; }
-      .footer-ttl ul {
-        display: block; }
-        .footer-ttl ul li {
-          margin: 10px 20px 0 0; }
-    .footer .container {
-      position: absolute;
-      top: 10px;
-      right: 20px; } }
+.service-box.reverse {
+  margin: 40px 0 80px 0; }
+  .service-box.reverse > .right {
+    top: -50px; }
+
+.contact-section > .btn {
+  margin: 20px auto 0 auto; }

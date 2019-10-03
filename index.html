@@ -21,237 +21,132 @@
     <meta name="twitter:url" content="https://www.supota.com/" />
     <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149352698-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-149352698-3');
+    <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>
+        (function(i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+
+        ga("create", "UA-125713558-1", "auto");
+
+        InstantClick.on("change", function() {
+            ga("send", "pageview", location.pathname + location.search);
+        });
+
+        InstantClick.init(50);
     </script>
+    <!--script src="js/common.js"></script-->
+    <!--<link href="//db.onlinewebfonts.com/c/8bc773512e829a52d207976b43c0ecca?family=Bodoni+SvtyTwo+ITC+TT" rel="stylesheet" type="text/css" />-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/object.css">
 </head>
 
 <body>
-    <!--
-<div id="loading">
-    <img class="logo" src="img/logo.png" alt="">
-    <div id="loading-progress">
-        <div id="loading-percent"><span id="loading-percent-text"></span>％</div>
-        <div id="loading-gauge"></div>
-    </div>
-</div>
--->
-    <input id="hamburger-check" type="checkbox">
-    <label class="hamburger" for="hamburger-check">
-    <div class="menu-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</label>
-
-    <div class="modal">
-        <ul class="menu">
-            <li><a href="#top" onclick="close_hamburger()">Top</a></li>
-            <li><a href="#vision" onclick="close_hamburger()">Vision</a></li>
-            <li><a href="#services" onclick="close_hamburger()">Services</a></li>
-            <li><a href="#contact" onclick="close_hamburger()">Contact</a></li>
-        </ul>
-    </div>
-
-    <div id="top" class="main-container">
-        <p class="copyright">©︎ 2019 SUPOTA Inc.</p>
-        <img class="logo" src="img/logo.png" alt="">
-        <p class="sub-title">Innovation in sports</p>
-        <div class="scroll">
-            <p class="scroll-text">SCROLL</p>
-            <div class="arrow3 scroll-arrow"></div>
-        </div>
-    </div>
-    <div class="header-back"></div>
-
-    <div id="vision" class="sub">
-        <div class="section-ttl">Vision</div>
-        <div class="sub-container">
-            <div class="sub-container-text">
-                <h1 class="ttl">
-                    <p><span>全てのアスリートが</span><span><br>本気でスポーツに取り組める社会へ</span></p>
-                </h1>
-                <p class="description"><span>私たちは、アスリートが自由に活動できる世界の実現を目指し活動しています。</span></p>
-                <div class="btn">
-                    <div class="btn-back"></div>
-                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vSbjpBj9DynaYYnp1h0cGTPY-RvFplkPSY24XmHgB_rv57k_FPWmJZDwwgPYm_B1fDRzMHy8t6wOR6T/pub?start=true&loop=true&delayms=3000" target="_blank">View more</a>
-                </div>
-            </div>
-
-            <div class="sub-container-content">
-                <img src="img/first.png" alt="">
+<header>
+    <h1>SUPOTA</h1>
+    <ul>
+        <li><a href="">Top</a></li>
+        <li><a href="">Vision</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Event</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</header>
+<main>
+    <section class="main-visual">
+        <h1>全てのアスリートが<br>本気でスポーツに取り組める社会へ</h1>
+    </section>
+    <section class="vision-section">
+        <h2>Vision</h2>
+        <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
+    </section>
+    <section class="service-section">
+        <h2>Service</h2>
+        <div class="service-box">
+            <img class="left" src="img/main-visual.jpg" alt=""/>
+            <div class="right txt-box">
+                <h2>SUPOTA</h2>
+                <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
             </div>
         </div>
-    </div>
-
-    <div id="services" class="sub">
-        <div class="section-ttl">Services</div>
-        <div class="sub-container flex-reverse">
-            <div class="sub-container-text">
-                <h1 class="ttl">
-                    <p>『SUPOTA』</p>
-                </h1>
-                <p class="description">
-                    <span>自分の応援したいスポーツ選手を直接的にサポートできるサービスです。<br>現在はアルファ版をクローズし、皆様に使っていただけるベータ版の開発を行っています。</span>
-                </p>
-                <!--
-<div class="btn">
-    <div class="btn-back"></div>
-    <a href="#">View more</a>
-</div>
--->
+        <div class="service-box reverse">
+            <div class="left txt-box">
+                <h2>V Doc.</h2>
+                <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
             </div>
-
-            <div class="sub-container-content">
-                <img src="img/service.png" alt="" style="width: 100%;">
+            <img class="right" src="img/main-visual.jpg" alt=""/>
+        </div>
+        <div class="service-box">
+            <img class="left" src="img/main-visual.jpg" alt=""/>
+            <div class="right txt-box">
+                <h2>Event</h2>
+                <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
             </div>
         </div>
-    </div>
-    <div id="contact" class="sub">
-        <div class="section-ttl">Contact</div>
-        <div class="sub-container">
-            <div class="sub-container-text">
-                <h1 class="ttl">
-                    <p>なんでもご気軽に<br>ご相談ください。</p>
-                </h1>
-                <p class="description">
-                    <span>イベント・サービス内の広告依頼・ご質問など、お気軽にお問い合わせください。</span>
-                </p>
+    </section>
+    <section class="contact-section">
+        <h2>Contact</h2>
+        <p>私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれはアバウト。概要です<br>私はテストこれはアバウト。概要です私はテストこれ私はテストこれはアバウト。概要ですはアバウト。概要です<br>私はテストこれはアバウト。概要です</p>
+        <div class="btn"><div class="btn-back"></div><a href="">Contact us</a></div>
+    </section>
+</main>
+<script type="text/javascript">
+    var images = document.getElementsByTagName('div'); // ページ内の画像取得
+    var loading = document.getElementById('loading'); // ローディング全体
+    var percent = document.getElementById('loading-percent-text'); // パーセントのテキスト部分
+    var gauge = document.getElementById('loading-gauge'); // ゲージ
+    var imgCount = 0;
+    var baseCount = 0;
+    var gaugeMax = 234; // ゲージの幅指定
+    var current;
 
-                <div class="btn">
-                    <div class="btn-back"></div>
-                    <a href="https://twitter.com/supota_">Contact!</a>
-                </div>
-            </div>
+    // 画像の読み込み
+    for (var i = 0; i < images.length; i++) {
+        var img = new Image(); // 画像の作成
+        // 画像読み込み完了したとき
+        img.onload = function() {
+            imgCount += 1;
+        };
+        // 画像読み込み失敗したとき
+        img.onerror = function() {
+            imgCount += 1;
+        };
+        img.src = images[i].src; // 画像にsrcを指定して読み込み開始
+    }
 
-            <div class="sub-container-content">
-                <img src="img/tl.png" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="sub">
-        <div class="section-ttl">Pressroom</div>
-        <div class="sub-container">
-            <ul class="pressroom">
-                <li class="btn">
-                    <div class="btn-back"></div>
-                    <a><span>2019.02.14</span>コーポレートサイトを公開しました</a>
-                </li>
-                <li class="btn">
-                    <div class="btn-back"></div>
-                    <a><span>2019.01.20</span>おおきに舞州アリーナでキンボール体験会を開きました</a>
-                </li>
-                <li class="btn">
-                    <div class="btn-back"></div>
-                    <a><span>2018.12.04</span>α版を公開しました</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-ttl">
-            <div class="footer-ttl-supota">
-                <img src="img/logo.png" alt="">
-                <h1>SUPOTA</h1>
-            </div>
-            <ul>
-                <li>
-                    <p>〒542-0085</p>
-                </li>
-                <li>
-                    <p>大阪府大阪市中央区心斎橋筋2丁目7-18</p>
-                </li>
-            </ul>
-            <div class="container">
-                <section class="content">
-                    <div class="box bg-2">
-                        <button class="button button--sacnite"><a href="https://twitter.com/supota_"><i class="fab fa-twitter fa-2x"></i></a></button>
-                    </div>
-                    <div class="box bg-2">
-                        <button class="button button--sacnite"><a href="mailto:info@supota.com"><i class="far fa-envelope fa-2x"></i></a></button>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </footer>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <script type="text/javascript">
-        var images = document.getElementsByTagName('div'); // ページ内の画像取得
-        var loading = document.getElementById('loading'); // ローディング全体
-        var percent = document.getElementById('loading-percent-text'); // パーセントのテキスト部分
-        var gauge = document.getElementById('loading-gauge'); // ゲージ
-        var imgCount = 0;
-        var baseCount = 0;
-        var gaugeMax = 234; // ゲージの幅指定
-        var current;
-
-        // 画像の読み込み
-        for (var i = 0; i < images.length; i++) {
-            var img = new Image(); // 画像の作成
-            // 画像読み込み完了したとき
-            img.onload = function() {
-                imgCount += 1;
-            };
-            // 画像読み込み失敗したとき
-            img.onerror = function() {
-                imgCount += 1;
-            };
-            img.src = images[i].src; // 画像にsrcを指定して読み込み開始
-        }
-
-        /*
-        // ローディング処理
-        var nowLoading = setInterval(function() {
-            if(baseCount <= imgCount) { // baseCountがimgCountを追い抜かないようにする
-                // 現在の読み込み具合のパーセントを取得
-                current = Math.floor(baseCount / images.length * 100);
-                // パーセント表示の書き換え
-                percent.innerHTML = current;
-                // ゲージの変更
-                gauge.style.width = Math.floor(gaugeMax / 100 * current) + 'px';
-                baseCount += 1;
-                // 全て読み込んだ時
-                if(baseCount == images.length) {
-                    // ローディング要素の非表示
-                    loading.style.display = 'none';
-                    // ローディングの終了
-                    clearInterval(nowLoading);
-                }
+    /*
+    // ローディング処理
+    var nowLoading = setInterval(function() {
+        if(baseCount <= imgCount) { // baseCountがimgCountを追い抜かないようにする
+            // 現在の読み込み具合のパーセントを取得
+            current = Math.floor(baseCount / images.length * 100);
+            // パーセント表示の書き換え
+            percent.innerHTML = current;
+            // ゲージの変更
+            gauge.style.width = Math.floor(gaugeMax / 100 * current) + 'px';
+            baseCount += 1;
+            // 全て読み込んだ時
+            if(baseCount == images.length) {
+                // ローディング要素の非表示
+                loading.style.display = 'none';
+                // ローディングの終了
+                clearInterval(nowLoading);
             }
-        }, 40); */
-        function close_hamburger() {
-            document.getElementById("hamburger-check").checked = false;
         }
-    </script>
+    }, 40); */
+    function close_hamburger() {
+        document.getElementById("hamburger-check").checked = false;
+    }
+</script>
 </body>
 
 </html>
