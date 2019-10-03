@@ -87,3 +87,27 @@ h2 {
     }
   }
 }
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  transform: rotateZ(0deg);
+}
+.scroll-arrow:before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: transparent white white transparent;
+  border-width: 2px;
+  background: transparent;
+}
