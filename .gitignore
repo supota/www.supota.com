@@ -2,3 +2,4 @@
 *.xml
 **/.sass-cache/
 *.config
+node_modules

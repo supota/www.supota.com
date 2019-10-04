@@ -1,0 +1,36 @@
+{
+  "name": "www.supota.com",
+  "version": "1.0.0",
+  "description": "This is a website for supota.",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch --include-path scss /css -o /css --output-style compressed",
+    "prefix": "postcss --use autoprefixer --no-map /css -d /css",
+    "test": "npm-run-all -p dev scss prefix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supota/www.supota.com.git"
+  },
+  "author": "supota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supota/www.supota.com/issues"
+  },
+  "homepage": "https://github.com/supota/www.supota.com#readme",
+  "devDependencies": {
+    "autoprefixer": "9.6.0",
+    "node-sass": "4.12.0",
+    "node-sass-import": "2.0.1",
+    "npm-run-all": "4.1.5",
+    "postcss": "7.0.17",
+    "postcss-cli": "6.1.2",
+    "postcss-loader": "3.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11",
+    "Android >= 6",
+    "iOS >= 10"
+  ]
+}
