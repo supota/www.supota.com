@@ -4,8 +4,8 @@
   "description": "This is a website for supota.",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch --include-path scss /css -o /css --output-style compressed",
-    "prefix": "postcss --use autoprefixer --no-map /css -d /css",
+    "scss": "node-sass --watch --include-path scss css/ -o css/ --output-style compressed",
+    "prefix": "postcss --use autoprefixer --no-map css/ -d css/",
     "test": "npm-run-all -p dev scss prefix"
   },
   "repository": {
