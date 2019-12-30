@@ -1,0 +1,6 @@
+*.iml
+*.xml
+**/.sass-cache/
+*.config
+node_modules
+package-lock.json
